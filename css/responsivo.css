@@ -1,1 +1,89 @@
+/* ============================================================
+   RESPONSIVO.CSS – Mobile-first: base para ecrãs pequenos,
+   depois expandimos para tablet e desktop.
+   ============================================================ */
+
+/* ---------- ECRÃS MUITO PEQUENOS (até 480px) ---------- */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .logo a {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.4rem;
+    }
+    #hero .hero-content {
+        flex-direction: column-reverse;
+        padding: 1.5rem;
+    }
+    .hero-avatar img {
+        max-width: 180px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .grid-projetos {
+        grid-template-columns: 1fr;
+    }
+    .flex-hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-hobby {
+        max-width: 100%;
+        width: 100%;
+    }
+    form {
+        padding: 1rem;
+    }
+    input, select, textarea {
+        font-size: 0.9rem;
+    }
+    .video-wrapper {
+        padding-bottom: 75%;
+    }
+}
+
+/* ---------- TABLET (481px a 768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 0.8rem 1.5rem;
+    }
+    .grid-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-hobbies {
+        justify-content: space-around;
+    }
+    .card-hobby {
+        flex: 1 1 160px;
+    }
+    #hero .hero-content {
+        flex-direction: row;
+    }
+    .hero-avatar img {
+        max-width: 200px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ---------- DESKTOP (769px em diante) – já definido em estilo.css ---------- */
+@media (min-width: 769px) {
+    /* já está otimizado */
+}
 
