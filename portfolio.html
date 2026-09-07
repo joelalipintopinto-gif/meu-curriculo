@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Ali Viano Pinto - Contacto</title>
+    <title>Joel Pinto - Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -18,69 +18,68 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="portfolio.html" class="active">Portfólio</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html" class="active">Contacto</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Vamos Trabalhar Juntos</h1>
-        <p>Preencha o formulário abaixo e entrarei em contacto consigo o mais breve possível.</p>
+        <h1>Meus Projetos</h1>
+        <p class="intro-projetos">Conheça algumas soluções que desenvolvi para o mundo do recrutamento e gestão de talentos.</p>
 
-        <form action="#" method="POST">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
+        <section class="grid-projetos">
+            <!-- Card 1 -->
+            <article class="card-projeto">
+                <figure>
+                    <img src="Cadarpio.png" alt=" mostrando imagem do cadarpio" width="300" height="200">
+                    <figcaption>Cadarpio para restaurante</figcaption>
+                </figure>
+                <h3>Cadarpio</h3>
+                <p>O cadarpio apresenta tres categorias.
+                    1.Aperitivo 2.Bebida 3.Prato principal
+                </p>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i></a>
+            </article>
 
-                <label for="nome">Nome completo *</label>
-                <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" placeholder="Ex: Joel Pinto">
+            <article class="card-projeto">
+                <figure>
+                    <img src="emprego.png" alt="Encontre oportunidades e mostre o seu talento" width="300" height="200">
+                    <figcaption>Plataforma de Emprego</figcaption>
+                </figure>
+                <h3>EmpregaJá</h3>
+                <p>Plataforma desenvolvida para facilitar a conexões entre empresas que procuram 
+                    candidatos qualificados e com Competências para uma determinada vaga e candidatos
+                    que procuram de oportunidades de emprego.</p>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i></a>
+            </article>
 
-                <label for="email">E-mail *</label>
-                <input type="email" id="email" name="email" required placeholder="joel@exemplo.com">
+            <article class="card-projeto">
+                <figure>
+                    <img src="sistema bancario1.png" alt="Simulador de sistema bancario" width="300" height="200">
+                    <figcaption>Sistema Bancario</figcaption>
+                </figure>
+                <h3>Sistema Bancario</h3>
+                <p>O sistema permite cadastrar dois numeros de conta bancaria.</p>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i></a>
+            </article>
 
-                <label for="telefone">Telefone *</label>
-                <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{9}" placeholder="Ex: 841234567">
+            <article class="card-projeto">
+                <figure>
+                    <img src="sistema escolar1.png" alt=" " width="300" height="200">
+                    <figcaption>Sistema Escolar</figcaption>
+                </figure>
+                <h3>Sistema Escolar</h3>
+                <p>E um mini sistema escolar com funcoes de:
+                    1. LerDadosAlunos
+                    2. CalcularMedia
+                    3. MostrarResultado
+                    4. Menu</p>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i></a>
+            </article>
 
-                <label for="data">Data preferida para contacto</label>
-                <input type="date" id="data" name="data">
-
-                <label for="idade">Idade (mín. 18, máx. 65)</label>
-                <input type="number" id="idade" name="idade" min="18" max="65" placeholder="Ex: 25">
-
-                <label for="cv">Anexar CV (PDF ou DOCX)</label>
-                <input type="file" id="cv" name="cv" accept=".pdf,.docx">
-
-                <label for="assunto">Assunto *</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="">Selecione...</option>
-                    <option value="proposta">Proposta de trabalho</option>
-                    <option value="parceria">Parceria / Colaboração</option>
-                    <option value="duvida">Dúvida sobre projetos</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <fieldset>
-                    <legend>Preferência de contacto</legend>
-                    <label><input type="radio" name="pref_contacto" value="email" checked> E-mail</label>
-                    <label><input type="radio" name="pref_contacto" value="telefone"> Telefone</label>
-                    <label><input type="radio" name="pref_contacto" value="whatsapp"> WhatsApp</label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Interesses (pode escolher vários)</legend>
-                    <label><input type="checkbox" name="interesses" value="desenvolvimento"> Desenvolvimento Web</label>
-                    <label><input type="checkbox" name="interesses" value="rh"> Recrutamento Digital</label>
-                    <label><input type="checkbox" name="interesses" value="ia"> Inteligência Artificial</label>
-                    <label><input type="checkbox" name="interesses" value="design"> Design UX/UI</label>
-                </fieldset>
-
-                <label for="mensagem">Mensagem *</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" maxlength="500" placeholder="Descreva o que deseja..."></textarea>
-
-                <button type="submit" class="btn btn-primary">Enviar mensagem <i class="fas fa-paper-plane"></i></button>
-            </fieldset>
-        </form>
+        </section>
     </main>
 
     <footer>
@@ -99,4 +98,3 @@
     </footer>
 </body>
 </html>
-
