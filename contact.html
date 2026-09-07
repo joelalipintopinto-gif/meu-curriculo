@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Ali Viano Pinto - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Joel Ali Viano Pinto</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vamos Trabalhar Juntos</h1>
+        <p>Preencha o formulário abaixo e entrarei em contacto consigo o mais breve possível.</p>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" placeholder="Ex: Joel Pinto">
+
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required placeholder="joel@exemplo.com">
+
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{9}" placeholder="Ex: 841234567">
+
+                <label for="data">Data preferida para contacto</label>
+                <input type="date" id="data" name="data">
+
+                <label for="idade">Idade (mín. 18, máx. 65)</label>
+                <input type="number" id="idade" name="idade" min="18" max="65" placeholder="Ex: 25">
+
+                <label for="cv">Anexar CV (PDF ou DOCX)</label>
+                <input type="file" id="cv" name="cv" accept=".pdf,.docx">
+
+                <label for="assunto">Assunto *</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione...</option>
+                    <option value="proposta">Proposta de trabalho</option>
+                    <option value="parceria">Parceria / Colaboração</option>
+                    <option value="duvida">Dúvida sobre projetos</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <fieldset>
+                    <legend>Preferência de contacto</legend>
+                    <label><input type="radio" name="pref_contacto" value="email" checked> E-mail</label>
+                    <label><input type="radio" name="pref_contacto" value="telefone"> Telefone</label>
+                    <label><input type="radio" name="pref_contacto" value="whatsapp"> WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interesses (pode escolher vários)</legend>
+                    <label><input type="checkbox" name="interesses" value="desenvolvimento"> Desenvolvimento Web</label>
+                    <label><input type="checkbox" name="interesses" value="rh"> Recrutamento Digital</label>
+                    <label><input type="checkbox" name="interesses" value="ia"> Inteligência Artificial</label>
+                    <label><input type="checkbox" name="interesses" value="design"> Design UX/UI</label>
+                </fieldset>
+
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" maxlength="500" placeholder="Descreva o que deseja..."></textarea>
+
+                <button type="submit" class="btn btn-primary">Enviar mensagem <i class="fas fa-paper-plane"></i></button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contactos">
+                <p><i class="fas fa-envelope"></i> joel.pinto@email.com</p>
+                <p><i class="fas fa-phone"></i> +258 867576667 ou 858769329</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="assinatura">Desenvolvido por Joel Ali Viano Pinto</p>
+        </div>
+    </footer>
+</body>
+</html>
 
